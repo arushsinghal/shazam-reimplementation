@@ -6,11 +6,11 @@ to the original notebook implementation.
 """
 
 import numpy as np
-from fingerprinting import extract_fingerprints
-from database import build_single_song_db, build_song_database
-from matcher import query_single_song, query_multi_song
-from utils import interpret_match, confidence_label, seconds_to_mmss
-from config import DEFAULT_CONFIG
+from core.fingerprinting import extract_fingerprints
+from core.database import build_single_song_db, build_song_database
+from core.matcher import query_single_song, query_multi_song
+from core.utils import interpret_match, confidence_label, seconds_to_mmss
+from core.config import DEFAULT_CONFIG
 
 
 def test_configuration():

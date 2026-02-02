@@ -14,14 +14,36 @@ This system implements the core algorithm behind audio recognition services like
 
 The algorithm is **time-shift invariant** — it can recognize a song regardless of where the query clip starts.
 
-## Architecture
+## Project Structure
 
 ```
-├── fingerprinting.py    # STFT, peak detection, fingerprint extraction
-├── database.py          # Hash database creation and storage
-├── matcher.py           # Query matching via offset voting
-├── utils.py             # Confidence scoring and time formatting
-└── main.py              # High-level API and orchestration
+├── core/                 # Core algorithm implementation
+│   ├── fingerprinting.py # STFT, peak detection, fingerprint extraction
+│   ├── database.py       # Hash database creation and storage
+│   ├── matcher.py        # Query matching via offset voting
+│   ├── config.py         # Configuration settings
+│   └── utils.py          # Utility functions
+├── backend/              # Flask backend API
+│   ├── app.py            # Flask application
+│   ├── routes.py         # API routes
+│   ├── service.py        # Business logic
+│   └── models.py         # Data models
+├── frontend/             # Next.js web interface
+│   ├── pages/            # React pages
+│   ├── lib/              # API client
+│   └── styles/           # CSS styles
+├── scripts/              # Executable scripts
+│   ├── main.py           # Main entry point
+│   ├── example.py        # Example usage
+│   └── test_validation.py # Tests
+├── research/             # Research & experiments
+│   ├── run_research_experiments.py
+│   ├── analysis_and_figures.py
+│   └── shazam_reimplmentation.ipynb
+└── docs/                 # Documentation
+    ├── API_CONTRACT.md
+    ├── ARCHITECTURE.md
+    └── DEPLOYMENT.md
 ```
 
 ## Installation
@@ -39,7 +61,7 @@ pip install numpy scipy librosa soundfile
 ### Building a Database
 
 ```python
-from main import build_database_from_files
+from scripts.main import build_database_from_files
 
 # Build database from audio files
 audio_files = {
@@ -54,7 +76,7 @@ print(f"Database contains {len(db)} unique hashes")
 ### Recognizing Audio
 
 ```python
-from main import recognize_from_file
+from scripts.main import recognize_from_file
 
 # Query with an audio clip
 result = recognize_from_file("query_clip.mp3", db)
@@ -72,7 +94,7 @@ print(result)
 ### Working with Audio Arrays
 
 ```python
-from main import recognize_from_audio
+from scripts.main import recognize_from_audio
 import librosa
 
 # Load audio as numpy array
@@ -85,7 +107,7 @@ print(result)
 
 ## Configuration
 
-The fingerprinting parameters are defined in `main.CONFIG`:
+The fingerprinting parameters are defined in `core/config.py`:
 
 ```python
 CONFIG = {
@@ -167,7 +189,7 @@ The modules are designed for easy API wrapping:
 
 ```python
 from fastapi import FastAPI, UploadFile
-from main import recognize_from_audio
+from scripts.main import recognize_from_audio
 import librosa
 import io
 

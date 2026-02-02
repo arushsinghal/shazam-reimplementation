@@ -14,11 +14,11 @@ from pathlib import Path
 # Add parent directory to path to import core modules
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
-from fingerprinting import extract_fingerprints, load_audio
-from database import build_song_database, Database
-from matcher import query_multi_song
-from utils import interpret_match
-from config import DEFAULT_CONFIG
+from core.fingerprinting import extract_fingerprints, load_audio
+from core.database import build_song_database, Database
+from core.matcher import query_multi_song
+from core.utils import interpret_match
+from core.config import DEFAULT_CONFIG
 
 
 class AudioFingerprintingService:

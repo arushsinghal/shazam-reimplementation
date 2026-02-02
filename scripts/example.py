@@ -9,8 +9,8 @@ This script shows how to:
 
 import numpy as np
 from main import CONFIG, recognize_from_audio
-from fingerprinting import extract_fingerprints, load_audio
-from database import build_single_song_db
+from core.fingerprinting import extract_fingerprints, load_audio
+from core.database import build_single_song_db
 
 
 def example_single_song():

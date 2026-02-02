@@ -8,7 +8,7 @@ import os
 # Add parent directory to path to import core modules
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
-from config import DEFAULT_CONFIG
+from core.config import DEFAULT_CONFIG
 from service import get_service, AudioFingerprintingService
 
 # 1. generate_noise_profile

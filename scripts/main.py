@@ -7,11 +7,11 @@ Demonstrates building a multi-song database and recognizing query audio clips.
 from typing import Dict
 import numpy as np
 
-from fingerprinting import extract_fingerprints, load_audio
-from database import build_song_database, build_single_song_db
-from matcher import query_multi_song, query_single_song
-from utils import interpret_match
-from config import DEFAULT_CONFIG
+from core.fingerprinting import extract_fingerprints, load_audio
+from core.database import build_song_database, build_single_song_db
+from core.matcher import query_multi_song, query_single_song
+from core.utils import interpret_match
+from core.config import DEFAULT_CONFIG
 
 
 # Use config from config module
