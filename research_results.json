@@ -1,0 +1,212 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-27T15:18:10.544233",
+    "config": {
+      "sr": 44100,
+      "n_fft": 2048,
+      "hop_ratio": 4,
+      "freq_neighborhood": 20,
+      "time_neighborhood": 20,
+      "amplitude_threshold": -35,
+      "num_bands": 6,
+      "fanout": 10,
+      "dt_min": 2,
+      "dt_max_seconds": 2.0
+    }
+  },
+  "experiments": {
+    "noise": {
+      "white": {
+        "snr_20_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_15_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_10_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_5_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_0_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        }
+      },
+      "pink": {
+        "snr_20_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_15_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_10_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_5_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_0_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        }
+      },
+      "cafe": {
+        "snr_20_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_15_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_10_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_5_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_0_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        }
+      },
+      "street": {
+        "snr_20_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_15_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_10_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_5_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_0_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        }
+      },
+      "club": {
+        "snr_20_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_15_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_10_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_5_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        },
+        "snr_0_db": {
+          "accuracy": 0.0,
+          "avg_score": 0.0,
+          "num_tests": 3
+        }
+      }
+    },
+    "codecs": {
+      "mp3_320kbps": {
+        "accuracy": 0.0,
+        "avg_score": 0.0
+      },
+      "mp3_128kbps": {
+        "accuracy": 0.0,
+        "avg_score": 0.0
+      },
+      "mp3_64kbps": {
+        "accuracy": 0.0,
+        "avg_score": 0.0
+      },
+      "aac_256kbps": {
+        "accuracy": 0.0,
+        "avg_score": 0.0
+      },
+      "opus_96kbps": {
+        "accuracy": 0.0,
+        "avg_score": 0.0
+      },
+      "opus_32kbps": {
+        "accuracy": 0.0,
+        "avg_score": 0.0
+      },
+      "original": {
+        "accuracy": 0.0,
+        "avg_score": 0.0
+      }
+    },
+    "microphone": {
+      "iphone": {
+        "accuracy": 0.0,
+        "avg_score": 0.0
+      },
+      "android": {
+        "accuracy": 0.0,
+        "avg_score": 0.0
+      },
+      "laptop": {
+        "accuracy": 0.0,
+        "avg_score": 0.0
+      },
+      "headset": {
+        "accuracy": 0.0,
+        "avg_score": 0.0
+      },
+      "loud_env": {
+        "accuracy": 0.0,
+        "avg_score": 0.0
+      },
+      "studio": {
+        "accuracy": 0.0,
+        "avg_score": 0.0
+      }
+    }
+  }
+}
